@@ -1,0 +1,43 @@
+@import "src/styles";
+
+.contacts {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.5fr;
+  margin-left: 20px;
+}
+
+.contacts__header {
+  grid-column: span 4;
+  text-align: center;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: $black;
+  border: 2px solid $blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border-radius: 8px;
+
+  @media screen and (min-width: $mobileDevice) {
+    font-size: $small-font;
+    padding: 10px;
+  }
+
+  @media screen and (min-width: $tabletDevice) {
+    font-size: $medium-font;
+  }
+  @media screen and (min-width: $desktopDevice) {
+    font-size: $large-font;
+    padding: 20px;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}

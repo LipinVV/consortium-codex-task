@@ -1,0 +1,23 @@
+@import "src/styles";
+
+.task {
+    border: 3px solid $black;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: $white;
+}
+
+.task__question {
+    min-height: 60px;
+}
+
+.task__answer {
+    border: 3px solid $orange;
+    color: $black;
+    page-break-inside: avoid;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: flex;
+    word-wrap: break-word;
+}

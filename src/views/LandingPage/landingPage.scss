@@ -1,0 +1,26 @@
+@import "src/styles";
+
+.landing-page {
+  display: grid;
+  background-color: $white;
+  border-radius: 8px;
+  padding-left: 20px;
+}
+
+.landing-page__header {
+  text-align: center;
+}
+
+.landing-page__paragraph {
+
+  @media screen and (min-width: $mobileDevice) {
+    font-size: $small-font;
+  }
+
+  @media screen and (min-width: $tabletDevice) {
+    font-size: $medium-font;
+  }
+  @media screen and (min-width: $desktopDevice) {
+    font-size: $large-font;
+  }
+}

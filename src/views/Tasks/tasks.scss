@@ -1,0 +1,30 @@
+@import "src/styles";
+
+.tasks {
+    display: grid;
+    grid-gap: 20px;
+    position: relative;
+
+    @media screen and (min-width: $mobileDevice) {
+        max-width: $mobileDevice;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    @media screen and (min-width: $tabletDevice) {
+        max-width: $tabletDevice;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    @media screen and (min-width: $desktopDevice) {
+        max-width: $desktopDevice;
+    }
+}
+
+.tasks__header {
+    text-align: center;
+    margin: 10px 0;
+
+    @media screen and (min-width: $desktopDevice) {
+        grid-column: span 2;
+    }
+}

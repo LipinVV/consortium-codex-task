@@ -1,0 +1,15 @@
+@import "src/styles";
+
+.header {
+  padding-top: 20px;
+}
+
+.header__main-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.header__underline {
+  background-color: $black;
+  width: 100%;
+}

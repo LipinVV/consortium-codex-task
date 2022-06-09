@@ -1,0 +1,64 @@
+@import "src/styles";
+
+.pagination {
+  display: grid;
+  justify-self: center;
+  grid-column: 1 / -1;
+}
+
+.pagination__current-page {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pagination__control-buttons {
+  width: 100%;
+  display: grid;
+  margin-bottom: 10px;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pagination__control-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: $black;
+  color: $white;
+
+  &:hover {
+    background-color: $orange;
+    color: $black;
+  }
+
+  &:disabled {
+    background-color: $gray;
+    color: $white;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+
+  &:active {
+    background-color: $orange;
+  }
+
+  @media screen and (min-width: $mobileDevice) {
+    height: 20px;
+    width: 100px;
+    font-size: $medium-font;
+  }
+
+  @media screen and (min-width: $tabletDevice) {
+    width: 120px;
+    height: 22px;
+    font-size: $large-font;
+    padding: 15px 15px;
+  }
+}
