@@ -1,4 +1,4 @@
-export const fibonacci: (value: number) =>number = (value: number) => {
+export const fibonacci: (value: number) => number = (value: number) => {
     if (value < 2) {
         return value;
     }
