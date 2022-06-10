@@ -1,6 +1,6 @@
 export const routes = {
-    landing: '/',
-    tasks: '/tasks',
-    contacts: '/contacts',
-    noMatch: '*',
-}
+  landing: '/',
+  tasks: '/tasks',
+  contacts: '/contacts',
+  noMatch: '*',
+};
