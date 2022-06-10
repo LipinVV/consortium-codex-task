@@ -11,7 +11,8 @@ export const palindrome = (string: string) => {
 }
 
 export const squareRoot = (number: number) => {
-    let square = 1, index = 0;
+    let square = 1;
+    let index = 0;
     while (true) {
         index = index + 1;
         square = (number / square + square) / 2

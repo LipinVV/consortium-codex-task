@@ -13,7 +13,7 @@ export const LandingPage = () => {
                 <a className='landing-page__link' href='https://github.com/LipinVV/consortium-codex-task' target='_blank' rel='noreferrer'>there</a>
                 if you want to observe the whole project.
             </p>
-            <p className='landing-page__paragraph'>Through "Contacts" page you can reach me by Telegram in case of any questions.</p>
+            <p className='landing-page__paragraph'>Through "Contacts" page you can reach me by Telegram in case of any further questions.</p>
         </section>
     )
 }
