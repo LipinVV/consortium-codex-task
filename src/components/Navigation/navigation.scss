@@ -2,12 +2,11 @@
 
 .navigation {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
 
 .navigation__link {
-  text-decoration: none;
   color: $black;
   display: flex;
   justify-content: center;
@@ -21,19 +20,19 @@
 
   @media screen and (min-width: $mobileDevice) {
     font-size: $small-font;
-    padding: 10px;
+    padding: 5px;
     background-color: $white;
   }
 
   @media screen and (min-width: $tabletDevice) {
     font-size: $medium-font;
-    padding: 15px;
+    padding: 10px;
     font-weight: 500;
   }
 
   @media screen and (min-width: $desktopDevice) {
     font-size: $large-font;
-    padding: 20px;
+    padding: 15px;
     font-weight: 600;
   }
 }

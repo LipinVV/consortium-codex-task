@@ -1,0 +1,50 @@
+@import "src/styles";
+
+.content-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 20px 0;
+
+  @media screen and (min-width: $mobileDevice) {
+    font-size: $small-font;
+    grid-gap: 10px;
+  }
+
+  @media screen and (min-width: $tabletDevice) {
+    font-size: $medium-font;
+    grid-gap: 20px;
+  }
+
+  @media screen and (min-width: $desktopDevice) {
+    font-size: $large-font;
+  }
+}
+
+.content-block__article {
+  border: 3px solid $blue;
+  display: grid;
+
+  @media screen and (min-width: $mobileDevice) {
+    padding: 10px;
+  }
+
+  @media screen and (min-width: $tabletDevice) {
+    padding: 15px;
+  }
+
+  @media screen and (min-width: $desktopDevice) {
+    padding: 20px;
+  }
+}
+
+.content-block__article-paragraph {
+  width: 100%;
+  display: flex;
+}
+
+.content-block__article-link {
+  color: $orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

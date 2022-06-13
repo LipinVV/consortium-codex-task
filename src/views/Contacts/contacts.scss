@@ -14,7 +14,6 @@
 }
 
 .contacts__link {
-  text-decoration: none;
   color: $black;
   border: 2px solid $blue;
   display: flex;
@@ -25,15 +24,16 @@
 
   @media screen and (min-width: $mobileDevice) {
     font-size: $small-font;
-    padding: 10px;
+    padding: 5px;
   }
 
   @media screen and (min-width: $tabletDevice) {
     font-size: $medium-font;
   }
+
   @media screen and (min-width: $desktopDevice) {
     font-size: $large-font;
-    padding: 20px;
+    padding: 10px;
   }
 
   &:hover {

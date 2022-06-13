@@ -5,13 +5,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: $orange;
+  color: $red;
   padding: 10px;
+
+  @media screen and (min-width: $mobileDevice) {
+    font-size: $small-font;
+  }
+
+  @media screen and (min-width: $tabletDevice) {
+    font-size: $medium-font;
+  }
+  @media screen and (min-width: $desktopDevice) {
+    font-size: $large-font;
+  }
 }
 
 .no-match-page__link {
-  text-decoration: none;
   color: $black;
+  background-color: $white;
   font-size: $medium-font;
   padding: 10px;
   border: 2px solid $black;

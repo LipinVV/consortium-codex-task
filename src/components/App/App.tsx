@@ -8,7 +8,7 @@ import { routes } from '../../routes';
 import './App.scss';
 
 const App = () => (
-  <div className="App">
+  <div className="app">
     <Header />
     <Routes>
       <Route path={routes.landing} element={<LandingPage />} />

@@ -1,0 +1,41 @@
+@import "src/styles";
+
+.footer {
+  display: grid;
+  min-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media screen and (min-width: $mobileDevice) {
+    max-width: $mobileDevice;
+    font-size: $small-font;
+  }
+
+  @media screen and (min-width: $tabletDevice) {
+    max-width: $tabletDevice;
+    font-size: $medium-font;
+  }
+
+  @media screen and (min-width: $desktopDevice) {
+    max-width: $desktopDevice;
+    font-size: $large-font;
+  }
+}
+
+.footer__template {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: $white;
+  box-shadow: $black 0 15px;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid $gray;
+}
+
+.footer__template-line {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

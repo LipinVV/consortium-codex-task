@@ -3,4 +3,5 @@ export const routes = {
   tasks: '/tasks',
   contacts: '/contacts',
   noMatch: '*',
+  noMatchTestExample: '/news',
 };

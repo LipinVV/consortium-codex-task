@@ -1,7 +1,7 @@
 export interface TaskInterface {
     id: number,
     text: string
-    answer: string,
+    answer: string | JSX.Element,
 }
 
 export interface PaginationInterface {

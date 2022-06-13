@@ -1,12 +1,12 @@
 @import "src/styles";
 
-.App {
+.app {
   margin: 0 auto;
   padding: 0 20px;
   box-shadow: $black 0 5px 15px;
-  min-height: 100vh;
   background: url("../../../public/main-bg.jpg") $blue center fixed;
   background-size: cover;
+  min-height: calc(100vh - (51px));
 
   @media screen and (min-width: $mobileDevice) {
     max-width: $mobileDevice;
